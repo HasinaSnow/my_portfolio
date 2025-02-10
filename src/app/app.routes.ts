@@ -21,17 +21,17 @@ export const routes: Routes = [
                     },
                     {
                         path: 'projects',
-                        title: 'Projects',
+                        title: 'SnowCode | projects',
                         loadComponent: () => import('./modules/project/project.component').then(m => m.ProjectComponent)
                     },
                     {
                         path: 'resume',
-                        title: 'Resume',
+                        title: 'SnowCode | resume',
                         loadComponent: () => import('./modules/resume/resume.component').then(m => m.ResumeComponent)
                     },
                     {
                         path: 'contact',
-                        title: 'Contact',
+                        title: 'SnowCode | contact',
                         loadComponent: () => import('./modules/contact/contact.component').then(m => m.ContactComponent)
                     }
                 ]
