@@ -57,8 +57,8 @@ export const PROJECT_DATA: IProject[] = [
                 }
             ],
             description: 'assets/projects/api-eventManager.md',
-            features: ['', 'manage personal event'],
-            stacks: ['#nodejs', '#express', '#typescript', '#socketIO'],
+            features: ['permission system', 'authentication system', 'notification system in realtime', 'manage personal event'],
+            stacks: ['#nodejs', '#express', '#jwt', '#typescript', '#socketIO'],
             links: {
                 repo: 'https://github.com/HasinaSnow/api-express-nodeJs-calendar-event.git',
                 demo: ''
