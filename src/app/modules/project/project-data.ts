@@ -39,7 +39,7 @@ export const PROJECT_DATA: IProject[] = [
             stacks: ['#nodejs', '#angular', '#typescript', '#primeng', '#swipperJs'],
             links: {
                 repo: 'https://github.com/HasinaSnow/mini-calendarEvent.git',
-                demo: 'https://mini-calendar-event-mobile.netlify.app/calendar'
+                demo: 'https://hasina-snow-mini-calendar-event-mobile-version.vercel.app/'
             }
        }
     },
