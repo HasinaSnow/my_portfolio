@@ -43,4 +43,26 @@ export const PROJECT_DATA: IProject[] = [
             }
        }
     },
+  {
+       id: 'project-2',
+       details: {
+            title: 'Api rest - Event manager',
+            subtitle: 'REST API for Efficient Event Management',
+            category: 'Backend', 
+            images: [
+                {
+                    src: './assets/projects/api.jpeg',
+                    alt: 'rest api',
+                    title: 'Rest api'
+                }
+            ],
+            description: 'assets/projects/api-eventManager.md',
+            features: ['', 'manage personal event'],
+            stacks: ['#nodejs', '#express', '#typescript', '#socketIO'],
+            links: {
+                repo: 'https://github.com/HasinaSnow/api-express-nodeJs-calendar-event.git',
+                demo: ''
+            }
+       }
+    }
 ]
