@@ -33,7 +33,7 @@ import { MenuModule } from 'primeng/menu';
                     alt="Image"/>
                 }
                 <div class="px-4 pt-2 flex flex-wrap gap-2 justify-start items-center">
-                    <p-splitButton menuStyleClass="top-2" [tooltipOptions]="'top'" severity="secondary" label="Go to" [model]="gotoItems"></p-splitButton>
+                    <p-splitButton menuStyleClass="top-2" severity="secondary" label="Go to" [model]="gotoItems"></p-splitButton>
                     <p-button (onClick)="showDetail.emit(item.id)" label="Detail" size="small" raised="true"/>
                 </div>
             </ng-template>
