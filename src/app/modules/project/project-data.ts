@@ -64,5 +64,27 @@ export const PROJECT_DATA: IProject[] = [
                 demo: ''
             }
        }
+    },
+    {
+        id: 'project-3',
+       details: {
+            title: 'Api rest - ChatSnow',
+            subtitle: 'REST API dedicated to managing real-time conversations between users.',
+            category: 'Backend', 
+            images: [
+                {
+                    src: './assets/projects/chat-snow/chat-api.png',
+                    alt: 'rest api - chat',
+                    title: 'Rest api for chat'
+                }
+            ],
+            description: 'assets/projects/chat-snow/api-chatSnow.md',
+            features: ['authentication system', 'notification system in realtime', 'manage user profile'],
+            stacks: ['#nodejs', '#express', '#MongoDB', '#Mongoose', '#socketIO', "#Minio (local file storage)", "#Dropbox storage", 'tsyringe', '#jwt', '#typescript'],
+            links: {
+                repo: 'https://github.com/HasinaSnow/express-ChatSnow.git',
+                demo: ''
+            }
+       }
     }
 ]
