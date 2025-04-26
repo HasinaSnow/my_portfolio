@@ -82,13 +82,13 @@ export class HeaderComponent implements OnInit {
     }
 
     downloadCV() {
-        const url = 'assets/files/CV.pdf'
+        const url = 'assets/files/CV2.pdf'
         this.urlService.downloadLink(url).subscribe(
             blob => {
                 const fileUrl = URL.createObjectURL(blob)
                 const a = document.createElement('a')
                 a.href = fileUrl
-                a.download = 'CV - Hasina Snow.pdf'
+                a.download = 'CV - Rakotoniaina Fenohasina Elia.pdf'
                 a.click()
                 URL.revokeObjectURL(fileUrl)
             },
