@@ -57,7 +57,6 @@ export class ProjectComponent implements OnInit{
     projects: Signal<IProjectIndex[]> = computed(() => {
         let projects = this.projectService.getAll()
         if(this.filterCateg() !== 'All') {
-            console.log('filter value', this.filterCateg())
             projects = projects.filter(project => project.category == this.filterCateg())
         }
         if(this.filterSearch()) {
@@ -67,7 +66,6 @@ export class ProjectComponent implements OnInit{
                 const subtitle = String(project.subtitle).replace(/\s+/g, ' ').trim().toLowerCase()
                 return search.some(word => title.includes(word) || subtitle.includes(word))
             })
-            console.log(search, projects)
         }
         return projects
     })
@@ -90,7 +88,6 @@ export class ProjectComponent implements OnInit{
     }
 
     showDetail(idDetail: string) {
-        console.log('on show detail', idDetail)
         this.ref = this.dialogService.open(ProjectDetailsComponent, {
             closeOnEscape: true,
             header: this.projects().find(project => project.id == idDetail)?.title || 'title project not found',
@@ -111,6 +108,5 @@ export class ProjectComponent implements OnInit{
 
     onSearchFilter(searchValue: string) {
         this.filterSearch.set(searchValue)
-        console.log('on search filter', searchValue)
     }
 }

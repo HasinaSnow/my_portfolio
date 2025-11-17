@@ -2,10 +2,42 @@ import { IProject } from "./project.interface"
 
 export const PROJECT_DATA: IProject[] = [
     {
+        id: 'project-0',
+        details: {
+            title: 'Application - ChatSnow',
+            subtitle: 'Application dedicated to managing realtime conversations between users.',
+            category: 'Frontend',
+            images: [
+                {
+                    src: './assets/projects/chat-snow/convers-desktop-dark.jpeg',
+                    alt: 'conversation - dark mode',
+                    title: 'conversation for dark mode'
+                },
+                {
+                    src: './assets/projects/chat-snow/convers-list-mobile-dark.jpeg',
+                    alt: 'conversation list - dark mode',
+                    title: 'conversation list for dark mode'
+                },
+                {
+                    src: './assets/projects/chat-snow/convers-msg-mobile-dark.jpeg',
+                    alt: 'conversation msg - dark mode',
+                    title: 'conversation message for dark mode'
+                }
+            ],
+            description: '',
+            features: ['authentication system', 'conversation system in realtime', 'emoji reaction system'],
+            stacks: ['#nodejs', '#angular', '#rxjs', '#emoji-mart', '#typescript'],
+            links: {
+                repo: 'https://github.com/HasinaSnow/angular-ChatSnow.git',
+                demo: 'https://hasinasnow.github.io/angular-ChatSnow'
+            }
+        }
+    },
+    {
         id: 'project-1',
         details: {
             title: 'Api rest - ChatSnow',
-            subtitle: 'REST API dedicated to managing real-time conversations between users.',
+            subtitle: 'REST API dedicated to managing realtime conversations between users.',
             category: 'Backend',
             images: [
                 {
