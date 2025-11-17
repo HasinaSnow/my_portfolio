@@ -26,7 +26,7 @@ export const PROJECT_DATA: IProject[] = [
             ],
             description: '',
             features: ['authentication system', 'conversation system in realtime', 'emoji reaction system'],
-            stacks: ['#nodejs', '#angular', '#rxjs', '#emoji-mart', '#typescript'],
+            stacks: ['#nodejs', '#angular', '#rxjs', '#emoji-mart', '#typescript', '#tailwindcss'],
             links: {
                 repo: 'https://github.com/HasinaSnow/angular-ChatSnow.git',
                 demo: 'https://hasinasnow.github.io/angular-ChatSnow'
